@@ -1,0 +1,92 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../../public/Logotipo.svg';
+import Linkedln from './icons/linkedln.astro';
+import Github from './icons/github.astro'
+import Mail from './icons/mail.astro';
+---
+
+<section id="section-header" class="m-20 p-20 text-slate-200 text-2xl font-bold">
+ <div id="section-div" class="m-1 p-1">
+    <Image src={Logo} alt="Logo" width={75} id="image" class="m-1 p-0 rounded-lg"></Image>
+</div>
+<div id="div-section">
+    <h1 class="m-1 p-1 text-[#d1c9c7] text-4xl font-bold">Hola Mundo <span>Soy @jeanctech</span></h1>
+    <small id="small-a" class="bg-[#2f308a] text-[#abafb6] rounded-lg">
+        <a class="m-1 p-1" href="http://" target="_blank" rel="noopener noreferrer">
+            Disponible para Trabajar
+        </a>
+    </small>
+ </div>
+ <div id="div-p" class="m-1 p-1 font-normal">
+    <p>
+        +2 años de Experiencia de Desarrollo. <span class="text-[#d8d168] font-bold">Desarrollador Web y Frontend Junior.</span>
+        <br>
+        <span class="text-[#7898dd] font-medium">De Valle del Cauca, Colombia</span>.
+        <span class="text-[#d88484] font-semibold">Especializado en crear aplicaciones web únicas.</span>
+    </p>
+ </div>
+ <div id="div-contacts">
+    <button id="contacts-buttons" class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg">
+        <Linkedln></Linkedln>
+    </button>
+    <button id="contacts-buttons" class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg">
+        <Github></Github>
+    </button>
+    <button id="contacts-buttons" class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg">
+        <Mail></Mail>
+    </button>
+ </div>
+</section>
+
+<style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  * {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans";
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #section-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+  }
+  #div-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  #image{
+    border: #302f33 solid 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #small-a{
+    border: #19078b solid 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #small-a:hover{
+    background-color: #251870e0;
+  }
+  #contacts-buttons{
+    border: #253636 solid 0.1rem;
+  }
+</style>
