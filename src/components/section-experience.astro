@@ -1,0 +1,112 @@
+---
+import Works from "./works.astro";
+---
+
+<div id="div-experience" class="m-1 p-1 text-[#dce0dc]">
+  <div id="div-jobs" class="text-[#e6e2e2]">
+    <Works />
+    <h3 class="m-1 p-1 text-2xl font-semibold">Experiencia Laboral</h3>
+  </div>
+  <div id="div-projects" class="m-1 p-1">
+    <ul id="div-ul">
+      <div id="div-container" class="m-1 p-1 bg-[#242323] rounded-xl">
+        <small id="small" class="m-1 p-1 text-[#636ad6] font-semibold" >
+          Actualmente
+        </small>
+        <li id="li" class="m-1 p-1 text[#333] font-bold">Trabajo</li>
+      </div>
+      <br />
+      <p id="div-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        <br />
+        elit Distinctio voluptatibus tenetur blanditiis eligendi.
+        <br />
+        facilis animi totam molestias aperiam repellat, eligendi.
+        <br />
+        Ratione natus illo quasi quidem error, enim eligendi.
+        <br />
+        dignissimos exercitationem voluptate aliquid. eligendi.
+      </p>
+    </ul>
+  </div>
+</div>
+
+<style>
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  #div-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  #div-jobs {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+  }
+  #div-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  #div-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  #div-container {
+    border: #333 solid 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  #li {
+    margin: 0.2rem;
+    border: #333 solid 0.1rem;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  #small {
+    margin: 0.2rem;
+    padding: 0.5rem;
+    border: #5e5858 solid 0.1rem;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+  #div-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  #div-text {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: #333 solid 0.1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+
+</style>
