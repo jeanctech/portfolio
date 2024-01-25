@@ -1,61 +1,111 @@
 ---
-import { Image } from 'astro:assets';
-import Logo from '../../public/Logotipo.svg';
-import Linkedln from './icons/linkedln.astro';
-import Github from './icons/github.astro'
-import Mail from './icons/mail.astro';
-import Jobs from './icons/jobs.astro';
-import SectionExperience from './section-experience.astro';
+import { Image } from "astro:assets";
+import Logo from "../../public/logotipo.svg";
+import Linkedln from "./icons/linkedln.astro";
+import Github from "./icons/github.astro";
+import Mail from "./icons/mail.astro";
+import Jobs from "./icons/jobs.astro";
+import SectionExperience from "./section-experience.astro";
+import SectionExperiences from "./section-experiences.astro";
+import SectionProjects from "./section-projects.astro";
+import SectionAbout from "./section-about.astro";
+import SectionFooter from "./section-footer.astro";
 ---
 
-<section id="section-header" class="m-[175px] p-[1px] text-slate-200 ">
- <div id="section-div" class="m-1 p-1">
-    <Image src={Logo} alt="Logo" width={75} id="image" class="m-1 p-0 rounded-lg"></Image>
-</div>
-<div id="div-section">
-    <h1 class="m-1 p-1 text-[#d1c9c7] text-5xl font-bold">Hola Mundo <span>Soy @jeanctech</span></h1>
- </div>
- <div id="div-p" class="m-[2.5px] p-[2.5px] text-2xl font-normal">
+<section id="section-header" class="m-[175px] p-[1px] text-slate-200">
+  <div id="section-div" class="m-1 p-1">
+    <Image
+      src={Logo}
+      alt="Logo"
+      width={75}
+      id="image"
+      class="m-1 p-0 rounded-lg"
+    />
+  </div>
+  <div id="div-section">
+    <h1 class="m-1 p-1 text-[#d1c9c7] text-5xl font-bold">
+      Hola Mundo <span>Soy @jeanctech</span>
+    </h1>
+  </div>
+  <div id="div-p" class="m-[2.5px] p-[2.5px] text-2xl font-normal">
     <p>
-        <span class="text-[#dacdcd] font-medium">+2 años de Experiencia de Desarrollo.</span>
-        <span class="text-[#d8d168] font-semibold">Desarrollador Web y Frontend Junior.</span>
-        <br>
-        <span class="text-[#7898dd] font-semibold">De Valle del Cauca, Colombia</span>.
-        <span class="text-[#c9c2c9] font-medium">Especializado en Crear Aplicaciones Web Unicas.</span>
-        <br>
-        <span class="text-[#c9c2c9] font-medium">Un Desarrollador Apasionado en Web</span>.
-        <span class="text-[#71c1cf] font-semibold">En un Constante Proceso de Aprendizaje.</span>
+      <span class="text-[#dacdcd] font-medium"
+        >+2 años de Experiencia de Desarrollo.</span
+      >
+      <span class="text-[#d8d168] font-semibold"
+        >Desarrollador Web y Frontend Junior.</span
+      >
+      <br />
+      <span class="text-[#7898dd] font-semibold"
+        >De Valle del Cauca, Colombia.</span
+      >
+      <span class="text-[#c9c2c9] font-medium"
+        >Especializado en Crear Aplicaciones Web Unicas.</span
+      >
+      <br />
+      <span class="text-[#c9c2c9] font-medium"
+        >Un Desarrollador Apasionado en la Web.</span
+      >
+      <span class="text-[#71c1cf] font-semibold"
+        >En un Constante Proceso de Aprendizaje.</span
+      >
     </p>
- </div>
- <div id="div-contacts" class="m-[2.5px] p-[2.5px]">
-    <small id="small-a" class="m-[2.5px] p-[2.5px] bg-[#203063] text-[#abafb6] rounded-lg">
-      <Jobs></Jobs>
-      <a class="m-1 p-1 font-semibold" href="http://" target="_blank" rel="noopener noreferrer">
-          Disponible para Trabajar
+  </div>
+  <div id="div-contacts" class="m-[2.5px] p-[2.5px]">
+    <small
+      id="small-a"
+      class="m-[2.5px] p-[2.5px] bg-[#203063] text-[#abafb6] rounded-lg"
+    >
+      <Jobs />
+      <a
+        class="m-1 p-1 font-bold"
+        href="http://"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Disponible para Trabajar
       </a>
-  </small>
-    <button id="contacts-buttons" class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg">
-        <Linkedln></Linkedln>
+    </small>
+    <button
+      id="contacts-buttons"
+      class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg"
+    >
+      <Linkedln />
     </button>
-    <button id="contacts-buttons" class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg">
-        <Github></Github>
+    <button
+      id="contacts-buttons"
+      class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg"
+    >
+      <Github />
     </button>
-    <button id="contacts-buttons" class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg">
-        <Mail></Mail>
+    <button
+      id="contacts-buttons"
+      class="m-[2.5px] p-[2.5px] bg-[#1f1e1e] rounded-lg"
+    >
+      <Mail />
     </button>
- </div>
- <div id="section-experience" class="flex flex-row justify-start items-start">
-  <SectionExperience></SectionExperience>
-  <SectionExperience></SectionExperience>
- </div>
- <div id="section-experience" class="flex flex-row justify-start items-start">
-  <SectionExperience></SectionExperience>
-  <SectionExperience></SectionExperience>
- </div>
+  </div>
+  <div id="section-expirence" class="flex flex-row justify-start items-start">
+    <SectionExperience />
+    <SectionExperiences />
+  </div>
+  <div id="section-projects" class="flex flex-row justify-start items-start">
+    <SectionProjects />
+    <SectionProjects />
+  </div>
+  <div id="section-projects" class="flex flex-row justify-start items-start">
+    <SectionProjects />
+    <SectionProjects />
+  </div>
+  <div id="section-about">
+    <SectionAbout />
+  </div>
+  <div id="section-footer">
+    <SectionFooter />
+  </div>
 </section>
 
 <style>
-
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
@@ -66,59 +116,98 @@ import SectionExperience from './section-experience.astro';
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans";
     box-sizing: border-box;
   }
-  body{
+  body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
-  #section-div{
+  #section-div {
     display: flex;
     flex-direction: row;
     justify-content: baseline;
     align-items: center;
   }
-  #div-section{
+  #div-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  #image{
+  #image {
     border: #302f33 solid 0.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #small-a{
+  #small-a {
     border: #0d0a22 solid 0.1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  #small-a:hover{
+  #small-a:hover {
     background-color: #2c2558;
   }
-  #div-contacts{
+  #div-contacts {
     display: flex;
     flex-direction: row;
     justify-content: baseline;
     align-items: center;
   }
-  #contacts-buttons{
+  #contacts-buttons {
     border: #253636 solid 0.1rem;
   }
-  #contact-buttons{
+  #contact-buttons {
     display: flex;
     flex-direction: row;
     border: #253636 solid 0.1rem;
     justify-content: center;
     align-items: center;
   }
-  #contacts-buttons:hover{
+  #contacts-buttons:hover {
     background-color: #253b3b;
   }
-
+  #section-expirence {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-projects {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-about {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-contacts{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-footer {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 </style>

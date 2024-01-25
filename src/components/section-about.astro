@@ -1,0 +1,94 @@
+---
+import { Image } from 'astro:assets';
+import About from './icons/about.astro';
+import Logotipo from '../../Public/Logotipo.svg';
+---
+
+<div id="section-about">
+    <div id="div-about" class="text-[#e6e2e2]">
+        <About />
+        <h3 class="m-1 p-1 text-2xl font-semibold">Sobre Mi</h3>
+    </div>
+    <div id="div-container">
+        <div id="container">
+            <p id="div-p" class="m-1 p-1">
+                Me llamo JeanCarlos Jimenez pero mi nombre de usuario es @jeanctech. Empecé en la programación hace
+                tres años me apasiona este mundo y todo su entorno a su vez quiero colaborar en este sector
+                con inovaciones y a su vez crear una comunidad. mis primeros aportes en el entorno del desarrollo
+                web Algunos de mis éxitos incluyen crear paginas web, sitios web, Aplicaciones web con las diferentes
+                habilidades aprendida en el proceso de creacion de los proyectos creados y que voy a seguir contruyendo
+                y colaborando proyectos y demas evento sobre desarrollo web.
+            </p>
+            <Image id="div-image" class="m-0.5 p-0.5" src={Logotipo} alt="Img-Next" width={250}></Image>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    body {
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: baseline;
+    }
+    #section-about {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: baseline;
+    }
+    #div-about {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: center;
+    }
+    #div-container {
+      border: #333 solid 0.1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: baseline;
+    }
+    #container {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #div-image {
+      border: #333 solid 0.1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: baseline;
+    }
+    #div-p {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: baseline;
+    }
+    #div-text {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      border: #333 solid 0.1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: baseline;
+    }
+
+  </style>
