@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+import Code from '../assets/imgs/code.astro';
+import Github from '../assets/imgs/github.astro';
+import Web from '../assets/imgs/web.astro';
+import Img from '../assets/img.webp';
+import Next from '../assets/imgs/next.svg';
+import React from '../assets/imgs/react.svg';
+import Tailwind from '../assets/imgs/tailwind.svg';
+---
+
+<div class="m-1 p-1 text-[#cdd6cd] flex flex-col justify-start items-start ">
+  <div class="m-1 p-1 flex flex-row justify-start items-center ">
+    <Code />
+    <h3 class="m-1 p-1 text-2xl font-semibold ">Proyectos</h3>
+  </div>
+  <div class="m-1 p-1 flex flex-col justify-start align-start ">
+    <ul class="flex flex-col justify-start items-start ">
+      <div class="m-1 p-1 bg-[#242323] flex flex-row justify-start items-center rounded-lg ">
+        <strong class="m-1 p-2 text-[#d68644] font-semibold  border-2 border-[#5e5858] border-t-0 border-b-0
+        border-l-0 ">
+            Svgl - A beautiful library with Svg logos
+        </strong>
+        <li class="m-1 p-1 text-[#5cabe0] font-bold border-2 border-[#333] border-x-0 border-y-0 border-b-0
+        border-t-0 ">2024</li>
+      </div>
+      <br />
+      <p class="m-2 p-2 border-2 border-[#333] rounded-lg flex flex-row justify-start items-start ">
+        Biblioteca de logos Svg de las marcas más populares.
+        <br>
+        +10k visitas al mes. +2K svgs descargados.
+        <br>
+        Creado desde cero con Next.js, React y Tailwind Css.
+      </p>
+      <p class="m-1 p-1 border-2 border-[#333] rounded-lg flex flex-row justify-center items-center ">
+        <strong class="m-1 p-1 flex flex-row justify-center items-center ">
+          <Image class="m-0.5 p-0.5" src={Next} alt="Img-Next" width={30}></Image>
+            Next.js
+        </strong>
+        <strong class="m-1 p-1 flex flex-row justify-center items-center ">
+            <Image class="m-0.5 p-0.5" src={React} alt="Img-React" width={30}></Image>
+            React.js
+        </strong>
+        <strong class="m-1 p-1 flex flex-row justify-center items-center ">
+            <Image class="m-0.5 p-0.5" src={Tailwind} alt="Img-Tailwind" width={30}></Image>
+            Tailwind.css
+        </strong>
+      </p>
+      <p class="m-2 p-2 border-2 border-[#333] rounded-lg flex flex-row justify-start items-start ">
+        <Image src={Img} alt="Img" width={350}></Image>
+      </p>
+      <p class="m-1 p-1 border-2 border-[#253636] rounded-lg flex flex-row justify-center items-center ">
+        <button class="m-[2.5px] p-[2.5px] flex flex-row justify-center items-center hover:bg-[#232525]
+        rounded-lg ">
+            <Github />
+            <strong class="m-[2.5px] p-[2.5px] ">Ver Codigo Fuente</strong>
+        </button>
+        <button class="m-[2.5px] p-[2.5px] flex flex-row justify-center items-center hover:bg-[#232525]
+        rounded-lg ">
+            <Web />
+            <strong class="m-[2.5px] p-[2.5px] ">Ir al Sitio Web</strong>
+        </button>
+      </p>
+    </ul>
+  </div>
+</div>
+
+<style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+
+</style>

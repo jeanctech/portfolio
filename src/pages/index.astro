@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/layout.astro';
-import SectionNav from '../Components/section-nav.astro';
-import SectionHeader from '../Components/section-header.astro';
+import SectionNav from '../components/section_nav.astro';
+import SectionHeader from '../components/section_header.astro';
 ---
 
 <Layout title="Bienvenido a Mi Portfolio - @jeanctech" />
@@ -11,6 +11,8 @@ import SectionHeader from '../Components/section-header.astro';
   <SectionHeader>
     <!-- SectionHeader -->
   </SectionHeader>
+</Layout>
+
 <style>
 
   @tailwind base;
@@ -20,8 +22,7 @@ import SectionHeader from '../Components/section-header.astro';
   * {
     margin: 0rem;
     padding: 0rem;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans";
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans";
     box-sizing: border-box;
   }
 

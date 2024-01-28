@@ -1,0 +1,102 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../../public/logotipo.svg";
+import Works from "./icons/works.astro";
+import Linkedln from "./icons/linkedln.astro";
+import Github from "./icons/github.astro";
+import Mail from "./icons/mail.astro";
+import SectionExperience from "./section_experience.astro";
+import SectionExperiences from "./section_experiences.astro";
+import SectionProjects from "./section_projects.astro";
+import SectionAbout from "./section_about.astro";
+import SectionFooter from "./section_footer.astro";
+---
+
+<section class="m-[165px] p-[10px] bg-gradient-to-r from-[#242323] text-slate-200 rounded-xl ">
+  <div class="m-1 p-1 flex flex-row justify-start items-start ">
+    <Image src={Logo} alt="Logo" width={75}
+      class="m-0.5 p-0 border-2 border-[#3d3838] flex flex-col justify-center items-center rounded-lg "/>
+  </div>
+  <div class="flex flex-row justify-between items-center ">
+    <h1 class="m-1 p-1 text-[#d1c9c7] text-5xl font-bold ">
+      Hola Mundo <span>Soy @jeanctech</span>
+    </h1>
+  </div>
+  <div class="m-[2.5px] p-[2.5px] text-2xl font-normal ">
+    <p>
+      <span class="text-[#dacdcd] font-medium ">
+        +2 años de Experiencia de Desarrollo.
+      </span>
+      <span class="text-[#d8d168] font-semibold ">
+        Desarrollador Web y Frontend Junior.
+      </span>
+      <br />
+      <span class="text-[#7898dd] font-semibold ">
+        De Valle del Cauca, Colombia.
+      </span>
+      <span class="text-[#c9c2c9] font-medium ">
+        Especializado en Crear Aplicaciones Web Unicas.
+      </span>
+      <br />
+      <span class="text-[#c9c2c9] font-medium ">
+        Un Desarrollador Apasionado en la Web.
+      </span>
+      <span class="text-[#71c1cf] font-semibold ">
+        En un Constante Proceso de Aprendizaje.
+      </span>
+    </p>
+  </div>
+  <div
+    class="m-[2.5px] p-[2.5px] flex flex-row justify-baseline items-center ">
+    <button
+    class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#333a3a] flex flex-row justify-center
+    items-center hover:bg-[#253b3b] ">
+    <Works />
+  </button>
+    <button
+      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#333a3a] flex flex-row justify-center
+      items-center hover:bg-[#253b3b] ">
+      <Linkedln />
+    </button>
+    <button
+      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#333a3a] flex flex-row justify-center
+      items-center hover:bg-[#253b3b] ">
+      <Github />
+    </button>
+    <button
+      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#333a3a] flex flex-row justify-center
+      items-center hover:bg-[#253b3b] ">
+      <Mail />
+    </button>
+  </div>
+  <div class="m-2 p-2 flex flex-row justify-center items-center ">
+    <SectionExperience />
+    <SectionExperiences />
+  </div>
+  <div class="m-2 p-2 flex flex-row justify-center items-center ">
+    <SectionProjects />
+    <SectionProjects />
+  </div>
+  <div class="m-2 p-2 flex flex-row justify-center items-center ">
+    <SectionProjects />
+    <SectionProjects />
+  </div>
+  <div class="m-2 p-2 flex flex-row justify-center items-center ">
+    <SectionAbout />
+  </div>
+  <div class="m-2 p-2 flex flex-row justify-center items-center ">
+    <SectionFooter />
+  </div>
+</section>
+
+<style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
