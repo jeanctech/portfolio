@@ -1,10 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-import About from '../assets/imgs/about.astro';
-import Logotipo from '../../Public/Logotipo.svg';
+import About from '../assets/favicons/about.astro';
+import Logotipo from '../../public/logotipo.svg';
 ---
 
-<section class="m-1 p-1 text-[#e6e2e2] flex flex-col justify-start items-start ">
+<section class="m-1 p-1 bg-gradient-to-r from-[#242323] text-slate-200 rounded-lg flex flex-col justify-start items-start ">
     <div class="m-1 p-1 flex flex-row justify-start items-center  ">
         <About />
         <h3 class="m-1 p-1 text-2xl font-semibold">Sobre Mi</h3>
@@ -29,10 +29,4 @@ import Logotipo from '../../Public/Logotipo.svg';
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
-    body {
-      display: flex;
-      flex-direction: row;
-      justify-content: baseline;
-      align-items: baseline;
-    }
 </style>

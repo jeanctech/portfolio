@@ -5,14 +5,9 @@ import Works from "./icons/works.astro";
 import Linkedln from "./icons/linkedln.astro";
 import Github from "./icons/github.astro";
 import Mail from "./icons/mail.astro";
-import SectionExperience from "./section_experience.astro";
-import SectionExperiences from "./section_experiences.astro";
-import SectionProjects from "./section_projects.astro";
-import SectionAbout from "./section_about.astro";
-import SectionFooter from "./section_footer.astro";
 ---
 
-<section class="m-[165px] p-[10px] bg-gradient-to-r from-[#242323] text-slate-200 rounded-xl ">
+<section class="mt-[180px] p-[10px] bg-gradient-to-r from-[#242323] text-slate-200 rounded-xl ">
   <div class="m-1 p-1 flex flex-row justify-start items-start ">
     <Image src={Logo} alt="Logo" width={75}
       class="m-0.5 p-0 border-2 border-[#3d3838] flex flex-col justify-center items-center rounded-lg "/>
@@ -69,34 +64,10 @@ import SectionFooter from "./section_footer.astro";
       <Mail />
     </button>
   </div>
-  <div class="m-2 p-2 flex flex-row justify-center items-center ">
-    <SectionExperience />
-    <SectionExperiences />
-  </div>
-  <div class="m-2 p-2 flex flex-row justify-center items-center ">
-    <SectionProjects />
-    <SectionProjects />
-  </div>
-  <div class="m-2 p-2 flex flex-row justify-center items-center ">
-    <SectionProjects />
-    <SectionProjects />
-  </div>
-  <div class="m-2 p-2 flex flex-row justify-center items-center ">
-    <SectionAbout />
-  </div>
-  <div class="m-2 p-2 flex flex-row justify-center items-center ">
-    <SectionFooter />
-  </div>
 </section>
 
 <style>
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
 </style>
