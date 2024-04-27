@@ -4,7 +4,8 @@ import SectionNav from "../components/section_nav.astro";
 import SectionHeader from "../components/section_header.astro";
 import SectionSkill from "../components/section_skill.astro";
 import SectionSkills from "../components/section_skills.astro";
-import SectionProjects from "../components/section_projects.astro";
+import SectionProjects0 from "../components/section_projects-0.astro";
+import SectionProjects1 from "../components/section_projects-1.astro";
 import SectionAbout from "../components/section_about.astro";
 import SectionFooter from "../components/section_footer.astro";
 ---
@@ -19,8 +20,8 @@ import SectionFooter from "../components/section_footer.astro";
         <SectionSkills />
       </section>
       <section class="mx-[200px] flex flex-row justify-between items-center">
-        <SectionProjects />
-        <SectionProjects />
+        <SectionProjects0 />
+        <SectionProjects1 />
       </section>
       <section class="mx-[200px] flex flex-row justify-center items-center">
         <SectionAbout />
@@ -47,4 +48,14 @@ import SectionFooter from "../components/section_footer.astro";
     justify-content: center;
     align-items: center;
   }
+  @media (min-height: 680px), screen and (orientation: portrait) {
+    :root{
+      margin: 0rem;
+      padding: 0rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
 </style>
