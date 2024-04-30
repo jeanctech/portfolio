@@ -11,22 +11,22 @@ import SectionFooter from "../components/section_footer.astro";
 ---
 
 <Layout title="Bienvenido a Mi Portfolio - @jeanctech">
-    <section class="mx-[0px] my-0 flex flex-col justify-start items-center">
+    <section id="section-s" class="mx-[0px] my-0 flex flex-col justify-start items-center ">
       <SectionNav />
       <SectionHeader />
     </section>
-      <section class="mx-[200px] my-0 flex flex-row justify-between items-center">
+      <section id="section-s" class="mx-[200px] my-0 flex flex-row justify-between items-center">
         <SectionSkill />
         <SectionSkills />
       </section>
-      <section class="mx-[200px] flex flex-row justify-between items-center">
+      <section id="section-s" class="mx-[200px] flex flex-row justify-between items-center">
         <SectionProjects0 />
         <SectionProjects1 />
       </section>
-      <section class="mx-[200px] flex flex-row justify-center items-center">
+      <section id="section-s" class="mx-[200px] flex flex-row justify-center items-center">
         <SectionAbout />
       </section>
-      <section class="mx-[200px] flex flex-row justify-between items-center">
+      <section id="section-s" class="mx-[200px] flex flex-row justify-between items-center">
         <SectionFooter />
       </section>
 </Layout>
@@ -50,12 +50,26 @@ import SectionFooter from "../components/section_footer.astro";
   }
   @media (min-height: 680px), screen and (orientation: portrait) {
     :root{
-      margin: 0rem;
-      padding: 0rem;
+      margin: 0rem auto;
+      padding: 1rem auto;
       display: flex;
+      text-align: center;
+      flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-wrap: pretty;
+    }
+    #section-s{
+      margin: 0rem auto;
+      padding: 1rem auto;
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-wrap: pretty;
     }
 }
 </style>

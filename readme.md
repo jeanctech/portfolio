@@ -4,4 +4,6 @@
 
 - [Repositorio de Porfolio.dev](https://github.com/midudev/porfolio.dev)
 
-![Img]()
+![Img](./public/img.webp)
+
+Proyectos Hecho con Astro y Creditos a Midudev
