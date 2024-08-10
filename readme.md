@@ -6,4 +6,4 @@
 
 ![Img](./public/img.webp)
 
-Proyectos Hecho con Astro y Creditos a Midudev
+Proyectos Hecho con Astro - Portfolio.dev Midudev

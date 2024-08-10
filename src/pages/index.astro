@@ -11,24 +11,39 @@ import SectionFooter from "../components/section_footer.astro";
 ---
 
 <Layout title="Bienvenido a Mi Portfolio - @jeanctech">
-    <section id="section-s" class="mx-[0px] my-0 flex flex-col justify-start items-center ">
-      <SectionNav />
-      <SectionHeader />
-    </section>
-      <section id="section-s" class="mx-[200px] my-0 flex flex-row justify-between items-center">
-        <SectionSkill />
-        <SectionSkills />
-      </section>
-      <section id="section-s" class="mx-[200px] flex flex-row justify-between items-center">
-        <SectionProjects0 />
-        <SectionProjects1 />
-      </section>
-      <section id="section-s" class="mx-[200px] flex flex-row justify-center items-center">
-        <SectionAbout />
-      </section>
-      <section id="section-s" class="mx-[200px] flex flex-row justify-between items-center">
-        <SectionFooter />
-      </section>
+  <section
+    id="section-s"
+    class="mx-[0px] my-0 flex flex-col justify-start items-center"
+  >
+    <SectionNav />
+    <SectionHeader />
+  </section>
+  <section
+    id="skills"
+    class="mx-[200px] my-0 flex flex-row justify-between items-center"
+  >
+    <SectionSkill />
+    <SectionSkills />
+  </section>
+  <section
+    id="projects"
+    class="mx-[200px] flex flex-row justify-between items-center"
+  >
+    <SectionProjects0 />
+    <SectionProjects1 />
+  </section>
+  <section
+    id="section-s"
+    class="mx-[200px] flex flex-row justify-center items-center"
+  >
+    <SectionAbout />
+  </section>
+  <section
+    id="section-s"
+    class="mx-[200px] flex flex-row justify-between items-center"
+  >
+    <SectionFooter />
+  </section>
 </Layout>
 <style>
   @tailwind base;
@@ -37,10 +52,11 @@ import SectionFooter from "../components/section_footer.astro";
   * {
     margin: 0rem;
     padding: 0rem;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans";
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans";
     box-sizing: border-box;
   }
-  body{
+  body {
     margin: 0rem;
     padding: 0rem;
     display: flex;
@@ -48,8 +64,24 @@ import SectionFooter from "../components/section_footer.astro";
     justify-content: center;
     align-items: center;
   }
+  #skills {
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #projects{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   @media (min-height: 680px), screen and (orientation: portrait) {
-    :root{
+    :root {
       margin: 0rem auto;
       padding: 1rem auto;
       display: flex;
@@ -60,7 +92,7 @@ import SectionFooter from "../components/section_footer.astro";
       align-items: center;
       text-wrap: pretty;
     }
-    #section-s{
+    #section-s {
       margin: 0rem auto;
       padding: 1rem auto;
       display: flex;
@@ -71,5 +103,5 @@ import SectionFooter from "../components/section_footer.astro";
       align-items: center;
       text-wrap: pretty;
     }
-}
+  }
 </style>

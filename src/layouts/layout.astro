@@ -4,12 +4,16 @@ interface Props {
 }
 const { title } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Contrata a @jeanctech Para Crear tus Aplicaciónes Web con un
-    Desarrollador Web. Especializado en Crear Aplicaciones Unicas.">
+    <meta
+      name="description"
+      content="Contrata a @jeanctech Para Crear tus Aplicaciónes Web con un
+    Desarrollador Web. Especializado en Crear Aplicaciones Unicas."
+    />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="generator" content={Astro.generator} />
@@ -23,17 +27,18 @@ const { title } = Astro.props;
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
-  *{
+  * {
     margin: 0rem;
     padding: 0rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans";
     box-sizing: border-box;
   }
-  body{
+  body {
     background-color: #1d1a1a;
   }
   @media (min-height: 680px), screen and (orientation: portrait) {
-    :root{
+    :root {
       margin: 0rem;
       padding: 0rem;
       display: flex;
@@ -41,5 +46,5 @@ const { title } = Astro.props;
       justify-content: center;
       align-items: center;
     }
-}
+  }
 </style>
