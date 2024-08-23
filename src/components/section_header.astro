@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../../public/logotipo.svg";
+import Icon from "../../public/icon.png";
 import Works from "./icons/works.astro";
 import Linkedln from "./icons/linkedln.astro";
 import Github from "./icons/github.astro";
@@ -12,7 +12,7 @@ import Mail from "./icons/mail.astro";
 >
   <div class="m-1 p-1 flex flex-row justify-start items-start">
     <Image
-      src={Logo}
+      src={Icon}
       alt="Logo"
       width={75}
       class="m-0.5 p-0 border-2 border-[#3d3838] flex flex-col justify-center items-center rounded-lg"
@@ -23,6 +23,7 @@ import Mail from "./icons/mail.astro";
       Hola Mundo <span>Soy @jeanctech</span>
     </h1>
   </div>
+  <br>
   <div class="m-[2.5px] p-[2.5px] text-2xl font-normal">
     <p>
       <span class="text-[#dacdcd] font-medium">
@@ -47,33 +48,37 @@ import Mail from "./icons/mail.astro";
       </span>
     </p>
   </div>
+
+  <br />
+
   <div class="m-[2.5px] p-[2.5px] flex flex-row justify-baseline items-center">
     <button
-      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#333a3a] flex flex-row justify-center
-      items-center hover:bg-[#253b3b]"
+      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#293030] flex flex-row justify-center
+      items-center hover:bg-[#162020]"
     >
       <Works />
     </button>
     <button
-      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#333a3a] flex flex-row justify-center
-      items-center hover:bg-[#253b3b]"
+      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#293030] flex flex-row justify-center
+      items-center hover:bg-[#162020]"
     >
       <Linkedln />
     </button>
     <button
-      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#333a3a] flex flex-row justify-center
-      items-center hover:bg-[#253b3b]"
+      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#293030] flex flex-row justify-center
+      items-center hover:bg-[#162020]"
     >
       <Github />
     </button>
     <button
-      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#333a3a] flex flex-row justify-center
-      items-center hover:bg-[#253b3b]"
+      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#293030] flex flex-row justify-center
+      items-center hover:bg-[#162020]"
     >
       <Mail />
     </button>
   </div>
 </section>
+
 <style>
   @tailwind base;
   @tailwind components;
