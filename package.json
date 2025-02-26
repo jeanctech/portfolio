@@ -10,14 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.1.1",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/tailwind": "^6.0.0",
+    "astro": "^5.4.3",
     "onefetch": "^0.3.3",
     "sharp": "^0.33.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }
