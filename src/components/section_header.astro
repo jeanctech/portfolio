@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Icon from "../../public/icon.png";
+import Icon from "../../public/logotipo.svg";
 
 import Works from "./icons/works.astro";
 
@@ -11,36 +11,24 @@ import Github from "./icons/github.astro";
 import Mail from "./icons/mail.astro";
 ---
 
-
-
 <section
-  class="mt-[180px] p-[10px] bg-gradient-to-r from-[#242323] text-slate-200 rounded-xl"
-
-
-
-
-  >
-  <div class="m-1 p-1 flex flex-row justify-start items-start">
-
-
-
+  class="mt-[180px] p-[10px] bg-gradient-to-r from-[#242323] text-[#e4dede] rounded-xl"
+>
+  <div class="m-0.5 p-0.5 flex flex-row justify-start items-start">
     <Image
       src={Icon}
-
-
-
       alt="Logo"
       width={75}
-      class="m-0.5 p-0 border-2 border-[#3d3838] flex flex-col justify-center items-center rounded-lg"
+      class="m-0.5 p-0.5 border-2 border-[#3d3838] flex flex-col justify-center items-center rounded-lg"
     />
   </div>
   <div class="flex flex-row justify-between items-center">
-    <h1 class="m-1 p-1 text-[#d1c9c7] text-5xl font-bold">
+    <h1 class="m-0.5 p-0.5 text-[#d1c9c7] text-5xl font-bold">
       Hola Mundo <span>Soy @jeanctech</span>
     </h1>
   </div>
-  <br>
-  <div class="m-[2.5px] p-[2.5px] text-2xl font-normal">
+  <br />
+  <div class="m-[1.5px] p-[1.5px] text-2xl font-500 text-[#d1c9c7]">
     <p>
       <span class="text-[#dacdcd] font-medium">
         +2 años de Experiencia de Desarrollo.
@@ -67,28 +55,28 @@ import Mail from "./icons/mail.astro";
 
   <br />
 
-  <div class="m-[2.5px] p-[2.5px] flex flex-row justify-baseline items-center">
+  <div class="m-[1.5px] p-[1.5px] flex flex-row justify-baseline items-center">
     <button
-      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#293030] flex flex-row justify-center
-      items-center hover:bg-[#162020]"
+      class="m-[3px] p-[1.5px] rounded-lg border-[1px] border-[#314949] flex flex-row justify-center
+      items-center hover:text-[#8ccfc4]"
     >
       <Works />
     </button>
     <button
-      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#293030] flex flex-row justify-center
-      items-center hover:bg-[#162020]"
+      class="m-[3px] p-[1.5px] rounded-lg border-[1px] border-[#314949]  flex flex-row justify-center
+      items-center hover:text-[#8ccfc4]"
     >
       <Linkedln />
     </button>
     <button
-      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#293030] flex flex-row justify-center
-      items-center hover:bg-[#162020]"
+      class="m-[3px] p-[1.5px] rounded-lg border-[1px] border-[#314949]  flex flex-row justify-center
+      items-center hover:text-[#8ccfc4]"
     >
       <Github />
     </button>
     <button
-      class="m-[2.5px] p-[2.5px] rounded-lg border-2 border-[#293030] flex flex-row justify-center
-      items-center hover:bg-[#162020]"
+      class="m-[3px] p-[1.5px] rounded-lg border-[1px] border-[#314949]  flex flex-row justify-center
+      items-center hover:text-[#8ccfc4]"
     >
       <Mail />
     </button>
