@@ -35,13 +35,33 @@ const { title } = Astro.props;
     box-sizing: border-box;
   }
   body {
-    background-color: #1d1a1a;
+    background-color: #182929;
   }
-  ::-webkit-scrollbar {
+  /* Estilo base del contenedor que tiene scroll */
+  .scroll-container {
+    overflow-y: auto; /* o scroll si siempre quieres que aparezca */
+  }
+
+  /* Scrollbar para navegadores basados en WebKit */
+  .scroll-container::-webkit-scrollbar {
     width: 0.8rem;
     height: 0.8rem;
-    background-color: #464242;
-    overflow-y: scroll;
+    background-color: #161f1f;
+    border-left: 0.1rem solid #3c5050;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #663399; /* color del "palo" */
+    border-radius: 0.4rem;
+  }
+
+  .scroll-container::-webkit-scrollbar-track {
+    background-color: #008000; /* color de fondo */
+  }
+
+  /* Firefox */
+  .scroll-container {
+    scrollbar-width: thin;
     scrollbar-color: #663399 #008000;
   }
   @media (min-height: 680px), screen and (orientation: portrait) {
