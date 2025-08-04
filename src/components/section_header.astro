@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import Icon from "../../public/logotipo.svg";
+import Icon from "../../public/logotipo.webp";
 
-import Works from "./icons/works.astro";
+import Works from "./icons/works.svg";
 
-import Linkedln from "./icons/linkedln.astro";
+import Twitter from "./icons/x.svg";
 
-import Github from "./icons/github.astro";
+import Github from "./icons/github.svg";
 
-import Mail from "./icons/mail.astro";
+import Mail from "./icons/mail.svg";
 ---
 
 <section
@@ -19,20 +19,20 @@ import Mail from "./icons/mail.astro";
       src={Icon}
       alt="Logo"
       width={75}
-      class="m-0.5 p-0.5 border-2 border-[#3d3838] flex flex-col justify-center items-center rounded-lg"
+      class="m-0.5 p-0.5 border-2 border-[#095050] flex flex-col justify-center items-center rounded-lg"
     />
   </div>
   <p class="m-2"></p>
   <div class="flex flex-row justify-between items-center">
     <h1 class="m-0.5 p-0.5 text-[#d1c9c7] text-5xl font-bold">
-      Hola Mundo <span>Soy @jeanctech</span>
+      H⟳la Mundo <span class="text-[#f09826]">Soy @jeanctech</span>
     </h1>
   </div>
   <p class="m-2"></p>
   <div class="m-[1.5px] p-[1.5px] text-2xl font-500 text-[#d1c9c7]">
     <p>
       <span class="text-[#dacdcd] font-medium">
-        +2 años de Experiencia de Desarrollo.
+        +3 años de Experiencia de Desarrollo.
       </span>
       <span class="text-[#e6ee70] font-semibold">
         Desarrollador Web y Frontend Junior.
@@ -46,7 +46,7 @@ import Mail from "./icons/mail.astro";
       </span>
       <br />
       <span class="text-[#c9c2c9] font-medium">
-        Un Desarrollador Apasionado en la Web.
+        Desarrollador Apasionado en la Web.
       </span>
       <span class="text-[#89fbff] font-semibold">
         En un Constante Proceso de Aprendizaje.
@@ -63,32 +63,56 @@ import Mail from "./icons/mail.astro";
       class="m-3px] p-[1.5px] rounded-lg border-[1px] border-[#314949] flex flex-row justify-center
       items-center hover:text-[#36e685]"
     >
-      <Works />
+      <a
+        href="https://www.linkedin.com/in/jeanctech/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="m-0.5 p-0.5 flex flex-row"
+        ><Works />
+        <span class="pl-1 mt-0.5">Disponible Para Trabajar</span></a
+      >
     </button>
     <p class="m-[2px] p-[0px]"></p>
     <button
       class="m-[3px] p-[1.5px] rounded-lg border-[1px] border-[#314949] flex flex-row justify-center
       items-center hover:text-[#36e685]"
     >
-      <Linkedln />
+      <a
+        href="https://x.com/jeanctech"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="m-0.5 p-0.5 flex flex-row"
+        ><Image src={Twitter} alt="Twitter-Logo" width={20} />
+        <span class="pl-1 mt-0.5">Twitter</span></a
+      >
     </button>
     <button
       class="m-[3px] p-[1.5px] rounded-lg border-[1px] border-[#314949] flex flex-row justify-center
       items-center hover:text-[#36e685]"
     >
-      <Github />
+      <a
+        href="https://github.com/jeanctech"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="m-0.5 p-0.5 flex flex-row"
+        ><Image src={Github} alt="Github-Logo" width={24} />
+        <span class="pl-1 mt-0.5">Github</span></a
+      >
     </button>
     <button
       class="m-[3px] p-[1.5px] rounded-lg border-[1px] border-[#314949] flex flex-row justify-center
       items-center hover:text-[#36e685]"
     >
-      <Mail />
+      <a
+        href="mailto:jeancarlosjimenezc25@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="m-0.5 p-0.5 flex flex-row"
+        ><Mail />
+        <span class="pl-1 mt-0.5">Contacto</span></a
+      >
     </button>
   </div>
 </section>
 
-<style>
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-</style>
+<style></style>

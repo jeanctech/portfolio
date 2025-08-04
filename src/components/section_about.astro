@@ -1,42 +1,34 @@
 ---
 import { Image } from "astro:assets";
-import About from "../assets/icons/about.astro";
-import Logotipo from "../../public/logotipo.svg";
+import Logotipo from "../../public/logotipo.webp";
 ---
 
 <section
   class="m-1 p-1 bg-gradient-to-r from-[#161d1d] text-[#cdd0d4] rounded-lg flex flex-col justify-start items-start"
 >
   <div class="m-1 p-1 flex flex-row justify-start items-center">
-    <About />
-    <h3 class="m-1 p-1 text-2xl font-semibold text-[#8ccfc4]">Sobre Mi</h3>
+    <h3 class="m-1 p-1 text-2xl font-semibold text-[#8ccfc4]">🙋‍♂️ Sobre Mi</h3>
   </div>
   <div
     class="m-2 p-1 border-[1px] border-[#3d3c3c] rounded-lg flex flex-row justify-start items-start"
   >
     <article class="m-1 p-1 flex flex-row justify-between items-center">
       <p class="m-1 p-1 flex flex-col justify-start items-start text-justify">
-        Me llamo JeanCarlos Jimenez pero mi nombre de usuario es @jeanctech.
-        Empecé en la programación hace tres años me apasiona este mundo y todo
-        su entorno a la vez quiero colaborar en este sector con inovaciones y
-        crear una comunidad de desarrollo. mis primeros aportes en el entorno
-        del web Incluyen crear paginas web, sitios web, Aplicaciones web con las
-        diferentes habilidades aprendida en el proceso de creacion de los
-        proyectos y lo cuales voy a seguir contruyendo y colaborando a demas de
-        asistir a evento sobre desarrollo web.
+        Soy JeanCarlos Jiménez (@jeanctech), desarrollador web con 3 años de
+        experiencia. Me especializo en la creación de páginas web, sitios
+        corporativos y aplicaciones web. Mi pasión por la programación me motiva
+        a innovar constantemente y contribuir al crecimiento de la comunidad de
+        desarrollo a través de proyectos colaborativos y participación en
+        eventos del sector.
       </p>
       <Image
-        class="ml-4 p-1 border-[1px] border-[#474646] rounded-lg flex flex-row justify-start items-start"
+        class="ml-4 p-1 border-[1px] border-[#0a6464] rounded-lg flex flex-row justify-start items-start"
         src={Logotipo}
         alt="Logotipo-@jeanctech"
-        width={225}
+        width={156}
       />
     </article>
   </div>
 </section>
 
-<style>
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-</style>
+<style></style>
